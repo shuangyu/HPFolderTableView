@@ -14,10 +14,13 @@
 		FF28C68A1BF0431500C50BC6 /* FolderTableView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF28C6881BF0431500C50BC6 /* FolderTableView.xcdatamodeld */; };
 		FF28C68C1BF0431500C50BC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF28C68B1BF0431500C50BC6 /* Assets.xcassets */; };
 		FF28C68F1BF0431500C50BC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF28C68D1BF0431500C50BC6 /* LaunchScreen.storyboard */; };
+		FF28C6981BF0486F00C50BC6 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF28C6971BF0486F00C50BC6 /* DetailViewController.m */; };
+		FFF4252E1C06F52D006F513E /* HPFolderAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF4252B1C06F52D006F513E /* HPFolderAnimation.m */; };
+		FFF4252F1C06F52D006F513E /* UIView+ViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF4252D1C06F52D006F513E /* UIView+ViewExt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FF28C6791BF0431500C50BC6 /* FolderTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FolderTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF28C6791BF0431500C50BC6 /* HPFolderTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HPFolderTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF28C67D1BF0431500C50BC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FF28C67F1BF0431500C50BC6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FF28C6801BF0431500C50BC6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -28,6 +31,12 @@
 		FF28C68B1BF0431500C50BC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF28C68E1BF0431500C50BC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF28C6901BF0431500C50BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF28C6961BF0486F00C50BC6 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		FF28C6971BF0486F00C50BC6 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		FFF4252A1C06F52D006F513E /* HPFolderAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPFolderAnimation.h; sourceTree = "<group>"; };
+		FFF4252B1C06F52D006F513E /* HPFolderAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPFolderAnimation.m; sourceTree = "<group>"; };
+		FFF4252C1C06F52D006F513E /* UIView+ViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewExt.h"; sourceTree = "<group>"; };
+		FFF4252D1C06F52D006F513E /* UIView+ViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewExt.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +61,7 @@
 		FF28C67A1BF0431500C50BC6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FF28C6791BF0431500C50BC6 /* FolderTableView.app */,
+				FF28C6791BF0431500C50BC6 /* HPFolderTableView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,10 +69,13 @@
 		FF28C67B1BF0431500C50BC6 /* FolderTableView */ = {
 			isa = PBXGroup;
 			children = (
+				FFF425291C06F52D006F513E /* AnimationClasses */,
 				FF28C67F1BF0431500C50BC6 /* AppDelegate.h */,
 				FF28C6801BF0431500C50BC6 /* AppDelegate.m */,
 				FF28C6821BF0431500C50BC6 /* ViewController.h */,
 				FF28C6831BF0431500C50BC6 /* ViewController.m */,
+				FF28C6961BF0486F00C50BC6 /* DetailViewController.h */,
+				FF28C6971BF0486F00C50BC6 /* DetailViewController.m */,
 				FF28C6851BF0431500C50BC6 /* Main.storyboard */,
 				FF28C68B1BF0431500C50BC6 /* Assets.xcassets */,
 				FF28C68D1BF0431500C50BC6 /* LaunchScreen.storyboard */,
@@ -82,12 +94,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FFF425291C06F52D006F513E /* AnimationClasses */ = {
+			isa = PBXGroup;
+			children = (
+				FFF4252A1C06F52D006F513E /* HPFolderAnimation.h */,
+				FFF4252B1C06F52D006F513E /* HPFolderAnimation.m */,
+				FFF4252C1C06F52D006F513E /* UIView+ViewExt.h */,
+				FFF4252D1C06F52D006F513E /* UIView+ViewExt.m */,
+			);
+			path = AnimationClasses;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FF28C6781BF0431500C50BC6 /* FolderTableView */ = {
+		FF28C6781BF0431500C50BC6 /* HPFolderTableView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF28C6931BF0431500C50BC6 /* Build configuration list for PBXNativeTarget "FolderTableView" */;
+			buildConfigurationList = FF28C6931BF0431500C50BC6 /* Build configuration list for PBXNativeTarget "HPFolderTableView" */;
 			buildPhases = (
 				FF28C6751BF0431500C50BC6 /* Sources */,
 				FF28C6761BF0431500C50BC6 /* Frameworks */,
@@ -97,9 +120,9 @@
 			);
 			dependencies = (
 			);
-			name = FolderTableView;
+			name = HPFolderTableView;
 			productName = FolderTableView;
-			productReference = FF28C6791BF0431500C50BC6 /* FolderTableView.app */;
+			productReference = FF28C6791BF0431500C50BC6 /* HPFolderTableView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -116,7 +139,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FF28C6741BF0431500C50BC6 /* Build configuration list for PBXProject "FolderTableView" */;
+			buildConfigurationList = FF28C6741BF0431500C50BC6 /* Build configuration list for PBXProject "HPFolderTableView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -129,7 +152,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FF28C6781BF0431500C50BC6 /* FolderTableView */,
+				FF28C6781BF0431500C50BC6 /* HPFolderTableView */,
 			);
 		};
 /* End PBXProject section */
@@ -152,9 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF28C6981BF0486F00C50BC6 /* DetailViewController.m in Sources */,
+				FFF4252F1C06F52D006F513E /* UIView+ViewExt.m in Sources */,
 				FF28C6841BF0431500C50BC6 /* ViewController.m in Sources */,
 				FF28C6811BF0431500C50BC6 /* AppDelegate.m in Sources */,
 				FF28C67E1BF0431500C50BC6 /* main.m in Sources */,
+				FFF4252E1C06F52D006F513E /* HPFolderAnimation.m in Sources */,
 				FF28C68A1BF0431500C50BC6 /* FolderTableView.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +296,7 @@
 				INFOPLIST_FILE = FolderTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SAP.FolderTableView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HPFolderTableView;
 			};
 			name = Debug;
 		};
@@ -281,14 +307,14 @@
 				INFOPLIST_FILE = FolderTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SAP.FolderTableView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HPFolderTableView;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FF28C6741BF0431500C50BC6 /* Build configuration list for PBXProject "FolderTableView" */ = {
+		FF28C6741BF0431500C50BC6 /* Build configuration list for PBXProject "HPFolderTableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF28C6911BF0431500C50BC6 /* Debug */,
@@ -297,13 +323,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF28C6931BF0431500C50BC6 /* Build configuration list for PBXNativeTarget "FolderTableView" */ = {
+		FF28C6931BF0431500C50BC6 /* Build configuration list for PBXNativeTarget "HPFolderTableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF28C6941BF0431500C50BC6 /* Debug */,
 				FF28C6951BF0431500C50BC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

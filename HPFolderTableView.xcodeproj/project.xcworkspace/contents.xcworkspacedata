@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:FolderTableView.xcodeproj">
+      location = "self:/Users/i324891/HuPeng/HPPlugin/HPFolderTableView/HPFolderTableView.xcodeproj">
    </FileRef>
 </Workspace>
